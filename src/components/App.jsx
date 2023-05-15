@@ -9,6 +9,9 @@ import { GlobalStyle } from './GlobalStyle';
 import { ProductReviewForm } from './ProductReviewForm/ProductReviewForm';
 
 import ColorPicker from './ColorPicker/';
+import Reader from './Reader/Reader';
+import publications from '../publications.json'
+
 
 // const colorPickerOptions = [
 //   { label: 'red', color: '#F44336' },
@@ -36,6 +39,7 @@ export class App extends Component {
     return (
       <>
         <GlobalStyle />
+        <Reader items={ publications} />
         <ProductReviewForm/>
         {/* <LoginForm /> */}
         {/* <h1>State</h1> */}
